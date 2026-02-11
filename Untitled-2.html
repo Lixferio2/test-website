@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Club de Tennis - Réservation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <link rel="stylesheet" href="CSS.css">
+<body>
+<header>
+    <h1>Club de Tennis de Chaumont</h1>
+    <p>Réservez facilement votre court de tennis en quelques clics.</p>
+    <nav>
+        <a href="#reservation">Réservation</a>
+        <a href="#horaires">Horaires</a>
+        <a href="#contacts">Contacts</a>
+    </nav>
+</header>
+
+<main>
+    <!-- Section Réservation -->
+    <section class="section" id="reservation">
+        <h2>Réserver un court</h2>
+        <p>Remplissez le formulaire ci-dessous pour demander une réservation de court.</p>
+
+        <form class="reservation-form" action="#" method="post">
+            <div class="form-row">
+                <label for="nom">Nom complet</label>
+                <input type="text" id="nom" name="nom" placeholder="Votre nom" required>
+            </div>
+
+            <div class="form-row">
+                <label for="email">Adresse e-mail</label>
+                <input type="email" id="email" name="email" placeholder="vous@example.com" required>
+            </div>
+
+            <div class="form-row">
+                <label for="telephone">Téléphone</label>
+                <input type="tel" id="telephone" name="telephone" placeholder="06 00 00 00 00" required>
+            </div>
+
+            <div class="form-row">
+                <label for="date">Date souhaitée</label>
+                <input type="date" id="date" name="date" required>
+            </div>
+
+            <div class="form-row">
+                <label for="heure">Heure souhaitée</label>
+                <input type="time" id="heure" name="heure" required>
+            </div>
+
+            <div class="form-row">
+                <label for="court">Type de court</label>
+                <select id="court" name="court">
+                    <option value="terre-battue">Terre battue</option>
+                    <option value="dur">Dur</option>
+                    <option value="couvert">Couvert</option>
+                </select>
+            </div>
+
+            <div class="form-row">
+                <label for="message">Message / précisions (optionnel)</label>
+                <textarea id="message" name="message" placeholder="Niveau de jeu, partenaire, matériel à louer, etc."></textarea>
+            </div>
+
+            <button type="submit" class="btn">Envoyer la demande</button>
+        </form>
+    </section>
+
+    <!-- Section Horaires -->
+    <section class="section" id="horaires">
+        <h2>Horaires d'ouverture</h2>
+        <p>Le club est ouvert tous les jours avec des horaires adaptés en semaine et le week-end.</p>
+
+        <table class="horaires-table">
+            <thead>
+            <tr>
+                <th>Jour</th>
+                <th>Horaires</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Lundi</td>
+                <td>08h00 - 22h00</td>
+            </tr>
+            <tr>
+                <td>Mardi</td>
+                <td>08h00 - 22h00</td>
+            </tr>
+            <tr>
+                <td>Mercredi</td>
+                <td>08h00 - 22h00</td>
+            </tr>
+            <tr>
+                <td>Jeudi</td>
+                <td>08h00 - 22h00</td>
+            </tr>
+            <tr>
+                <td>Vendredi</td>
+                <td>08h00 - 22h00</td>
+            </tr>
+            <tr>
+                <td>Samedi</td>
+                <td>09h00 - 21h00</td>
+            </tr>
+            <tr>
+                <td>Dimanche</td>
+                <td>09h00 - 20h00</td>
+            </tr>
+            </tbody>
+        </table>
+
+        <p>Les jours fériés, merci de vérifier les horaires spécifiques affichés au club ou sur nos réseaux sociaux.</p>
+    </section>
+
+    <!-- Section Contacts -->
+    <section class="section" id="contacts">
+        <h2>Contacts des gérants</h2>
+        <p>Pour toute question ou demande particulière, contactez l'un des gérants du club.</p>
+
+        <div class="contacts-grid">
+            <div class="contact-card">
+                <h3>Jean Dupont</h3>
+                <p>Rôle : Responsable du club</p>
+                <p>Tél. : 06 12 34 56 78</p>
+                <p>Email : jean.dupont@tennis-chaumont.fr</p>
+            </div>
+
+            <div class="contact-card">
+                <h3>Marie Martin</h3>
+                <p>Rôle : Responsable réservation & événements</p>
+                <p>Tél. : 06 87 65 43 21</p>
+                <p>Email : marie.martin@tennis-chaumont.fr</p>
+            </div>
+
+            <div class="contact-card">
+                <h3>Accueil du club</h3>
+                <p>Tél. : 03 25 00 00 00</p>
+                <p>Email : contact@tennis-chaumont.fr</p>
+                <p>Adresse : 10 rue du Court Central, 52000 Chaumont</p>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer>
+    © 2026 Club de Tennis de Chaumont - Tous droits réservés.
+</footer>
+</body>
+</html>
